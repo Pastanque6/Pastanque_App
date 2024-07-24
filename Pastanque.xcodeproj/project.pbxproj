@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740024852C4F869100FB8889 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740024842C4F869100FB8889 /* NumberFormatter.swift */; };
+		740024872C4F99B100FB8889 /* LeaguesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740024862C4F99B100FB8889 /* LeaguesViewModel.swift */; };
+		7400248B2C50E39A00FB8889 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7400248A2C50E39A00FB8889 /* FontStyles.swift */; };
+		7400248D2C50E3B600FB8889 /* Geologica-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7400248C2C50E3B600FB8889 /* Geologica-Medium.ttf */; };
+		7400248F2C50E3BF00FB8889 /* Geologica-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7400248E2C50E3BE00FB8889 /* Geologica-Light.ttf */; };
+		741296242C22D479006BAE21 /* PastanqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741296232C22D479006BAE21 /* PastanqueApp.swift */; };
+		741296262C22D479006BAE21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741296252C22D479006BAE21 /* ContentView.swift */; };
+		741296282C22D47A006BAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741296272C22D47A006BAE21 /* Assets.xcassets */; };
+		7412964E2C22D5D7006BAE21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7412964D2C22D5D7006BAE21 /* GoogleService-Info.plist */; };
+		749EC4152C2327E700F3BBA8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 749EC4142C2327E700F3BBA8 /* FirebaseAuth */; };
+		749EC4172C2327E700F3BBA8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 749EC4162C2327E700F3BBA8 /* FirebaseFirestore */; };
+		749EC4292C24325400F3BBA8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4282C24325400F3BBA8 /* Match.swift */; };
+		749EC42B2C24327600F3BBA8 /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */; };
+		749EC42D2C2432AE00F3BBA8 /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42C2C2432AE00F3BBA8 /* MatchesView.swift */; };
+		749EC42F2C2440E500F3BBA8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42E2C2440E500F3BBA8 /* SignUpView.swift */; };
+		749EC4312C2441ED00F3BBA8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */; };
+		749EC4352C24455F00F3BBA8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 749EC4342C24455F00F3BBA8 /* FirebaseFirestoreSwift */; };
+		749EC4372C3C2B6600F3BBA8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4362C3C2B6600F3BBA8 /* MainView.swift */; };
+		749EC43B2C4E963B00F3BBA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC43A2C4E963B00F3BBA8 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		741296312C22D47A006BAE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741296182C22D479006BAE21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7412961F2C22D479006BAE21;
+			remoteInfo = Pastanque;
+		};
+		7412963B2C22D47A006BAE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741296182C22D479006BAE21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7412961F2C22D479006BAE21;
+			remoteInfo = Pastanque;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		740024842C4F869100FB8889 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		740024862C4F99B100FB8889 /* LeaguesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModel.swift; sourceTree = "<group>"; };
+		7400248A2C50E39A00FB8889 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		7400248C2C50E3B600FB8889 /* Geologica-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geologica-Medium.ttf"; sourceTree = "<group>"; };
+		7400248E2C50E3BE00FB8889 /* Geologica-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geologica-Light.ttf"; sourceTree = "<group>"; };
+		741296202C22D479006BAE21 /* Pastanque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastanque.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		741296232C22D479006BAE21 /* PastanqueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastanqueApp.swift; sourceTree = "<group>"; };
+		741296252C22D479006BAE21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		741296272C22D47A006BAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		741296302C22D47A006BAE21 /* PastanqueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastanqueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7412963A2C22D47A006BAE21 /* PastanqueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastanqueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7412964D2C22D5D7006BAE21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		749EC4282C24325400F3BBA8 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
+		749EC42C2C2432AE00F3BBA8 /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		749EC42E2C2440E500F3BBA8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		749EC4362C3C2B6600F3BBA8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		749EC4382C4E95A600F3BBA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749EC43A2C4E963B00F3BBA8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7412961D2C22D479006BAE21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749EC4152C2327E700F3BBA8 /* FirebaseAuth in Frameworks */,
+				749EC4172C2327E700F3BBA8 /* FirebaseFirestore in Frameworks */,
+				749EC4352C24455F00F3BBA8 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7412962D2C22D47A006BAE21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741296372C22D47A006BAE21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740024832C4E9D4C00FB8889 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		740024882C50E03A00FB8889 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				749EC43A2C4E963B00F3BBA8 /* User.swift */,
+				749EC4282C24325400F3BBA8 /* Match.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		740024892C50E38400FB8889 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7400248C2C50E3B600FB8889 /* Geologica-Medium.ttf */,
+				7400248E2C50E3BE00FB8889 /* Geologica-Light.ttf */,
+				7400248A2C50E39A00FB8889 /* FontStyles.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		741296172C22D479006BAE21 = {
+			isa = PBXGroup;
+			children = (
+				741296222C22D479006BAE21 /* Pastanque */,
+				741296212C22D479006BAE21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		741296212C22D479006BAE21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741296202C22D479006BAE21 /* Pastanque.app */,
+				741296302C22D47A006BAE21 /* PastanqueTests.xctest */,
+				7412963A2C22D47A006BAE21 /* PastanqueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		741296222C22D479006BAE21 /* Pastanque */ = {
+			isa = PBXGroup;
+			children = (
+				740024892C50E38400FB8889 /* Fonts */,
+				740024882C50E03A00FB8889 /* Model */,
+				741296232C22D479006BAE21 /* PastanqueApp.swift */,
+				741296252C22D479006BAE21 /* ContentView.swift */,
+				749EC4362C3C2B6600F3BBA8 /* MainView.swift */,
+				749EC42C2C2432AE00F3BBA8 /* MatchesView.swift */,
+				749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */,
+				749EC42E2C2440E500F3BBA8 /* SignUpView.swift */,
+				749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */,
+				7412964D2C22D5D7006BAE21 /* GoogleService-Info.plist */,
+				749EC4382C4E95A600F3BBA8 /* Info.plist */,
+				741296272C22D47A006BAE21 /* Assets.xcassets */,
+				740024832C4E9D4C00FB8889 /* Preview Content */,
+				740024842C4F869100FB8889 /* NumberFormatter.swift */,
+				740024862C4F99B100FB8889 /* LeaguesViewModel.swift */,
+			);
+			path = Pastanque;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7412961F2C22D479006BAE21 /* Pastanque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741296442C22D47A006BAE21 /* Build configuration list for PBXNativeTarget "Pastanque" */;
+			buildPhases = (
+				7412961C2C22D479006BAE21 /* Sources */,
+				7412961D2C22D479006BAE21 /* Frameworks */,
+				7412961E2C22D479006BAE21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pastanque;
+			packageProductDependencies = (
+				749EC4142C2327E700F3BBA8 /* FirebaseAuth */,
+				749EC4162C2327E700F3BBA8 /* FirebaseFirestore */,
+				749EC4342C24455F00F3BBA8 /* FirebaseFirestoreSwift */,
+			);
+			productName = Pastanque;
+			productReference = 741296202C22D479006BAE21 /* Pastanque.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7412962F2C22D47A006BAE21 /* PastanqueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741296472C22D47A006BAE21 /* Build configuration list for PBXNativeTarget "PastanqueTests" */;
+			buildPhases = (
+				7412962C2C22D47A006BAE21 /* Sources */,
+				7412962D2C22D47A006BAE21 /* Frameworks */,
+				7412962E2C22D47A006BAE21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				741296322C22D47A006BAE21 /* PBXTargetDependency */,
+			);
+			name = PastanqueTests;
+			productName = PastanqueTests;
+			productReference = 741296302C22D47A006BAE21 /* PastanqueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		741296392C22D47A006BAE21 /* PastanqueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7412964A2C22D47A006BAE21 /* Build configuration list for PBXNativeTarget "PastanqueUITests" */;
+			buildPhases = (
+				741296362C22D47A006BAE21 /* Sources */,
+				741296372C22D47A006BAE21 /* Frameworks */,
+				741296382C22D47A006BAE21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7412963C2C22D47A006BAE21 /* PBXTargetDependency */,
+			);
+			name = PastanqueUITests;
+			productName = PastanqueUITests;
+			productReference = 7412963A2C22D47A006BAE21 /* PastanqueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741296182C22D479006BAE21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					7412961F2C22D479006BAE21 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7412962F2C22D47A006BAE21 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7412961F2C22D479006BAE21;
+					};
+					741296392C22D47A006BAE21 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7412961F2C22D479006BAE21;
+					};
+				};
+			};
+			buildConfigurationList = 7412961B2C22D479006BAE21 /* Build configuration list for PBXProject "Pastanque" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 741296172C22D479006BAE21;
+			packageReferences = (
+				749EC4132C2327E700F3BBA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 741296212C22D479006BAE21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7412961F2C22D479006BAE21 /* Pastanque */,
+				7412962F2C22D47A006BAE21 /* PastanqueTests */,
+				741296392C22D47A006BAE21 /* PastanqueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7412961E2C22D479006BAE21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7400248D2C50E3B600FB8889 /* Geologica-Medium.ttf in Resources */,
+				741296282C22D47A006BAE21 /* Assets.xcassets in Resources */,
+				7400248F2C50E3BF00FB8889 /* Geologica-Light.ttf in Resources */,
+				7412964E2C22D5D7006BAE21 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7412962E2C22D47A006BAE21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741296382C22D47A006BAE21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7412961C2C22D479006BAE21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741296262C22D479006BAE21 /* ContentView.swift in Sources */,
+				740024852C4F869100FB8889 /* NumberFormatter.swift in Sources */,
+				7400248B2C50E39A00FB8889 /* FontStyles.swift in Sources */,
+				749EC4372C3C2B6600F3BBA8 /* MainView.swift in Sources */,
+				749EC4312C2441ED00F3BBA8 /* AuthViewModel.swift in Sources */,
+				740024872C4F99B100FB8889 /* LeaguesViewModel.swift in Sources */,
+				749EC42D2C2432AE00F3BBA8 /* MatchesView.swift in Sources */,
+				741296242C22D479006BAE21 /* PastanqueApp.swift in Sources */,
+				749EC43B2C4E963B00F3BBA8 /* User.swift in Sources */,
+				749EC42B2C24327600F3BBA8 /* MatchesViewModel.swift in Sources */,
+				749EC4292C24325400F3BBA8 /* Match.swift in Sources */,
+				749EC42F2C2440E500F3BBA8 /* SignUpView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7412962C2C22D47A006BAE21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741296362C22D47A006BAE21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		741296322C22D47A006BAE21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7412961F2C22D479006BAE21 /* Pastanque */;
+			targetProxy = 741296312C22D47A006BAE21 /* PBXContainerItemProxy */;
+		};
+		7412963C2C22D47A006BAE21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7412961F2C22D479006BAE21 /* Pastanque */;
+			targetProxy = 7412963B2C22D47A006BAE21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		741296422C22D47A006BAE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		741296432C22D47A006BAE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		741296452C22D47A006BAE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pastanque/Preview Content\"";
+				DEVELOPMENT_TEAM = ZAQD4A7F2G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pastanque/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PST.Pastanque;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		741296462C22D47A006BAE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pastanque/Preview Content\"";
+				DEVELOPMENT_TEAM = ZAQD4A7F2G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pastanque/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PST.Pastanque;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		741296482C22D47A006BAE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAQD4A7F2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PST.PastanqueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pastanque.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pastanque";
+			};
+			name = Debug;
+		};
+		741296492C22D47A006BAE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAQD4A7F2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PST.PastanqueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pastanque.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pastanque";
+			};
+			name = Release;
+		};
+		7412964B2C22D47A006BAE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAQD4A7F2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PST.PastanqueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pastanque;
+			};
+			name = Debug;
+		};
+		7412964C2C22D47A006BAE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAQD4A7F2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PST.PastanqueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pastanque;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7412961B2C22D479006BAE21 /* Build configuration list for PBXProject "Pastanque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741296422C22D47A006BAE21 /* Debug */,
+				741296432C22D47A006BAE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741296442C22D47A006BAE21 /* Build configuration list for PBXNativeTarget "Pastanque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741296452C22D47A006BAE21 /* Debug */,
+				741296462C22D47A006BAE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741296472C22D47A006BAE21 /* Build configuration list for PBXNativeTarget "PastanqueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741296482C22D47A006BAE21 /* Debug */,
+				741296492C22D47A006BAE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7412964A2C22D47A006BAE21 /* Build configuration list for PBXNativeTarget "PastanqueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7412964B2C22D47A006BAE21 /* Debug */,
+				7412964C2C22D47A006BAE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		749EC4132C2327E700F3BBA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		749EC4142C2327E700F3BBA8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749EC4132C2327E700F3BBA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		749EC4162C2327E700F3BBA8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749EC4132C2327E700F3BBA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		749EC4342C24455F00F3BBA8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749EC4132C2327E700F3BBA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 741296182C22D479006BAE21 /* Project object */;
+}
