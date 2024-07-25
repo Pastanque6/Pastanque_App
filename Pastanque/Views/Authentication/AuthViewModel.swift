@@ -59,10 +59,19 @@ class AuthViewModel: ObservableObject {
                     return
                 }
                 
-                let user = User(id: uid, username: username, phoneNumber: phoneNumber, unlockedLeagues: [selectedLeague])
+                let user = User(
+                    id: uid,
+                    username: username,
+                    phoneNumber: phoneNumber,
+                    credits: 50.0,
+                    gems: 1000,
+                    unlockedLeagues: [selectedLeague]
+                )
                 self.db.collection("users").document(uid).setData([
                     "username": user.username,
                     "phoneNumber": user.phoneNumber,
+                    "credits": user.credits,
+                    "gems": user.gems,
                     "unlockedLeagues": user.unlockedLeagues
                 ]) { error in
                     if let error = error {
@@ -78,6 +87,7 @@ class AuthViewModel: ObservableObject {
             }
         }
     }
+    
     func fetchUser() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         db.collection("users").document(uid).getDocument { document, error in
@@ -85,8 +95,17 @@ class AuthViewModel: ObservableObject {
                 let data = document.data()
                 let username = data?["username"] as? String ?? ""
                 let phoneNumber = data?["phoneNumber"] as? String ?? ""
+                let credits = data?["credits"] as? Double ?? 0.0
+                let gems = data?["gems"] as? Int ?? 0
                 let unlockedLeagues = data?["unlockedLeagues"] as? [String] ?? []
-                self.user = User(id: uid, username: username, phoneNumber: phoneNumber, unlockedLeagues: unlockedLeagues)
+                self.user = User(
+                    id: uid,
+                    username: username,
+                    phoneNumber: phoneNumber,
+                    credits: credits,
+                    gems: gems,
+                    unlockedLeagues: unlockedLeagues
+                )
                 self.isLoggedIn = true
             } else {
                 self.errorMessage = "User does not exist"
@@ -104,4 +123,3 @@ class AuthViewModel: ObservableObject {
         }
     }
 }
-

@@ -20,11 +20,11 @@
 		749EC4172C2327E700F3BBA8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 749EC4162C2327E700F3BBA8 /* FirebaseFirestore */; };
 		749EC4292C24325400F3BBA8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4282C24325400F3BBA8 /* Match.swift */; };
 		749EC42B2C24327600F3BBA8 /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */; };
-		749EC42D2C2432AE00F3BBA8 /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42C2C2432AE00F3BBA8 /* MatchesView.swift */; };
+		749EC42D2C2432AE00F3BBA8 /* MatchesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42C2C2432AE00F3BBA8 /* MatchesList.swift */; };
 		749EC42F2C2440E500F3BBA8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC42E2C2440E500F3BBA8 /* SignUpView.swift */; };
 		749EC4312C2441ED00F3BBA8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */; };
 		749EC4352C24455F00F3BBA8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 749EC4342C24455F00F3BBA8 /* FirebaseFirestoreSwift */; };
-		749EC4372C3C2B6600F3BBA8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4362C3C2B6600F3BBA8 /* MainView.swift */; };
+		749EC4372C3C2B6600F3BBA8 /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC4362C3C2B6600F3BBA8 /* MatchesView.swift */; };
 		749EC43B2C4E963B00F3BBA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749EC43A2C4E963B00F3BBA8 /* User.swift */; };
 		74C2BC112C513082008CD3DF /* MatchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC102C513082008CD3DF /* MatchCard.swift */; };
 		74C2BC172C5135D2008CD3DF /* MatchOdds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC162C5135D2008CD3DF /* MatchOdds.swift */; };
@@ -33,6 +33,16 @@
 		74C2BC1E2C5232D2008CD3DF /* MatchLeague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC1D2C5232D2008CD3DF /* MatchLeague.swift */; };
 		74C2BC202C5236A3008CD3DF /* MatchTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC1F2C5236A3008CD3DF /* MatchTeams.swift */; };
 		74C2BC222C523718008CD3DF /* MatchStartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC212C523718008CD3DF /* MatchStartTime.swift */; };
+		74C2BC242C525F74008CD3DF /* MatchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC232C525F74008CD3DF /* MatchFilter.swift */; };
+		74C2BC262C525F9A008CD3DF /* MatchFilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC252C525F9A008CD3DF /* MatchFilterList.swift */; };
+		74C2BC322C528423008CD3DF /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC312C528423008CD3DF /* TabBarViewModel.swift */; };
+		74C2BC342C528439008CD3DF /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC332C528439008CD3DF /* TabBarItem.swift */; };
+		74C2BC362C528450008CD3DF /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC352C528450008CD3DF /* CustomTabBar.swift */; };
+		74C2BC392C528574008CD3DF /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC382C528574008CD3DF /* ShopView.swift */; };
+		74C2BC3C2C52863A008CD3DF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC3B2C52863A008CD3DF /* ProfileView.swift */; };
+		74C2BC3F2C529542008CD3DF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC3E2C529542008CD3DF /* Header.swift */; };
+		74C2BC412C529591008CD3DF /* CreditsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC402C529591008CD3DF /* CreditsValue.swift */; };
+		74C2BC432C5295D0008CD3DF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC422C5295D0008CD3DF /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +77,10 @@
 		7412964D2C22D5D7006BAE21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		749EC4282C24325400F3BBA8 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
-		749EC42C2C2432AE00F3BBA8 /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		749EC42C2C2432AE00F3BBA8 /* MatchesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesList.swift; sourceTree = "<group>"; };
 		749EC42E2C2440E500F3BBA8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		749EC4362C3C2B6600F3BBA8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		749EC4362C3C2B6600F3BBA8 /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
 		749EC4382C4E95A600F3BBA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749EC43A2C4E963B00F3BBA8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74C2BC102C513082008CD3DF /* MatchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCard.swift; sourceTree = "<group>"; };
@@ -80,6 +90,16 @@
 		74C2BC1D2C5232D2008CD3DF /* MatchLeague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLeague.swift; sourceTree = "<group>"; };
 		74C2BC1F2C5236A3008CD3DF /* MatchTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTeams.swift; sourceTree = "<group>"; };
 		74C2BC212C523718008CD3DF /* MatchStartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStartTime.swift; sourceTree = "<group>"; };
+		74C2BC232C525F74008CD3DF /* MatchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFilter.swift; sourceTree = "<group>"; };
+		74C2BC252C525F9A008CD3DF /* MatchFilterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFilterList.swift; sourceTree = "<group>"; };
+		74C2BC312C528423008CD3DF /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		74C2BC332C528439008CD3DF /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		74C2BC352C528450008CD3DF /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		74C2BC382C528574008CD3DF /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		74C2BC3B2C52863A008CD3DF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		74C2BC3E2C529542008CD3DF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		74C2BC402C529591008CD3DF /* CreditsValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsValue.swift; sourceTree = "<group>"; };
+		74C2BC422C5295D0008CD3DF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,16 +177,13 @@
 		741296222C22D479006BAE21 /* Pastanque */ = {
 			isa = PBXGroup;
 			children = (
-				74C2BC1C2C5232A7008CD3DF /* Constants */,
-				74C2BC0F2C51306F008CD3DF /* Match */,
-				740024892C50E38400FB8889 /* Fonts */,
-				740024882C50E03A00FB8889 /* Model */,
 				741296232C22D479006BAE21 /* PastanqueApp.swift */,
 				741296252C22D479006BAE21 /* ContentView.swift */,
-				749EC4362C3C2B6600F3BBA8 /* MainView.swift */,
-				749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */,
-				749EC42E2C2440E500F3BBA8 /* SignUpView.swift */,
-				749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */,
+				74C2BC2D2C52818E008CD3DF /* Views */,
+				740024882C50E03A00FB8889 /* Model */,
+				74C2BC302C528382008CD3DF /* Tabbar */,
+				74C2BC1C2C5232A7008CD3DF /* Constants */,
+				74C2BC272C52811B008CD3DF /* Components */,
 				7412964D2C22D5D7006BAE21 /* GoogleService-Info.plist */,
 				749EC4382C4E95A600F3BBA8 /* Info.plist */,
 				741296272C22D47A006BAE21 /* Assets.xcassets */,
@@ -176,27 +193,136 @@
 			path = Pastanque;
 			sourceTree = "<group>";
 		};
-		74C2BC0F2C51306F008CD3DF /* Match */ = {
+		74C2BC1C2C5232A7008CD3DF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				749EC42C2C2432AE00F3BBA8 /* MatchesView.swift */,
-				74C2BC102C513082008CD3DF /* MatchCard.swift */,
-				74C2BC162C5135D2008CD3DF /* MatchOdds.swift */,
-				74C2BC182C5135E3008CD3DF /* MatchOddsList.swift */,
-				74C2BC1D2C5232D2008CD3DF /* MatchLeague.swift */,
-				74C2BC1F2C5236A3008CD3DF /* MatchTeams.swift */,
-				74C2BC212C523718008CD3DF /* MatchStartTime.swift */,
+				740024892C50E38400FB8889 /* Fonts */,
+				74C2BC1A2C523289008CD3DF /* LeagueFlagMapper.swift */,
+				740024842C4F869100FB8889 /* NumberFormatter.swift */,
+				74C2BC402C529591008CD3DF /* CreditsValue.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		74C2BC272C52811B008CD3DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC282C528131008CD3DF /* Match */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		74C2BC282C528131008CD3DF /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC2C2C52817A008CD3DF /* Card */,
+				74C2BC2B2C528169008CD3DF /* Filters */,
+				74C2BC2A2C528158008CD3DF /* Odds */,
+				74C2BC292C528142008CD3DF /* Details */,
 			);
 			path = Match;
 			sourceTree = "<group>";
 		};
-		74C2BC1C2C5232A7008CD3DF /* Constants */ = {
+		74C2BC292C528142008CD3DF /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				74C2BC1A2C523289008CD3DF /* LeagueFlagMapper.swift */,
-				740024842C4F869100FB8889 /* NumberFormatter.swift */,
+				74C2BC1D2C5232D2008CD3DF /* MatchLeague.swift */,
+				74C2BC1F2C5236A3008CD3DF /* MatchTeams.swift */,
+				74C2BC212C523718008CD3DF /* MatchStartTime.swift */,
 			);
-			path = Constants;
+			path = Details;
+			sourceTree = "<group>";
+		};
+		74C2BC2A2C528158008CD3DF /* Odds */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC162C5135D2008CD3DF /* MatchOdds.swift */,
+				74C2BC182C5135E3008CD3DF /* MatchOddsList.swift */,
+			);
+			path = Odds;
+			sourceTree = "<group>";
+		};
+		74C2BC2B2C528169008CD3DF /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC252C525F9A008CD3DF /* MatchFilterList.swift */,
+				74C2BC232C525F74008CD3DF /* MatchFilter.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		74C2BC2C2C52817A008CD3DF /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				749EC42C2C2432AE00F3BBA8 /* MatchesList.swift */,
+				74C2BC102C513082008CD3DF /* MatchCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		74C2BC2D2C52818E008CD3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC3D2C529538008CD3DF /* Header */,
+				74C2BC3A2C528632008CD3DF /* Profile */,
+				74C2BC372C528569008CD3DF /* Shop */,
+				74C2BC2F2C5281C5008CD3DF /* Authentication */,
+				74C2BC2E2C5281A6008CD3DF /* Match */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74C2BC2E2C5281A6008CD3DF /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				749EC4362C3C2B6600F3BBA8 /* MatchesView.swift */,
+				749EC42A2C24327600F3BBA8 /* MatchesViewModel.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		74C2BC2F2C5281C5008CD3DF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				749EC42E2C2440E500F3BBA8 /* SignUpView.swift */,
+				749EC4302C2441ED00F3BBA8 /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		74C2BC302C528382008CD3DF /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC312C528423008CD3DF /* TabBarViewModel.swift */,
+				74C2BC332C528439008CD3DF /* TabBarItem.swift */,
+				74C2BC352C528450008CD3DF /* CustomTabBar.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		74C2BC372C528569008CD3DF /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC382C528574008CD3DF /* ShopView.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		74C2BC3A2C528632008CD3DF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC3B2C52863A008CD3DF /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		74C2BC3D2C529538008CD3DF /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				74C2BC3E2C529542008CD3DF /* Header.swift */,
+				74C2BC422C5295D0008CD3DF /* HeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,21 +468,31 @@
 				741296262C22D479006BAE21 /* ContentView.swift in Sources */,
 				740024852C4F869100FB8889 /* NumberFormatter.swift in Sources */,
 				7400248B2C50E39A00FB8889 /* FontStyles.swift in Sources */,
+				74C2BC392C528574008CD3DF /* ShopView.swift in Sources */,
 				74C2BC1B2C523289008CD3DF /* LeagueFlagMapper.swift in Sources */,
-				749EC4372C3C2B6600F3BBA8 /* MainView.swift in Sources */,
+				74C2BC362C528450008CD3DF /* CustomTabBar.swift in Sources */,
+				749EC4372C3C2B6600F3BBA8 /* MatchesView.swift in Sources */,
+				74C2BC342C528439008CD3DF /* TabBarItem.swift in Sources */,
 				749EC4312C2441ED00F3BBA8 /* AuthViewModel.swift in Sources */,
 				74C2BC172C5135D2008CD3DF /* MatchOdds.swift in Sources */,
 				740024872C4F99B100FB8889 /* LeaguesViewModel.swift in Sources */,
 				74C2BC192C5135E3008CD3DF /* MatchOddsList.swift in Sources */,
-				749EC42D2C2432AE00F3BBA8 /* MatchesView.swift in Sources */,
+				74C2BC412C529591008CD3DF /* CreditsValue.swift in Sources */,
+				749EC42D2C2432AE00F3BBA8 /* MatchesList.swift in Sources */,
 				74C2BC112C513082008CD3DF /* MatchCard.swift in Sources */,
+				74C2BC3C2C52863A008CD3DF /* ProfileView.swift in Sources */,
+				74C2BC242C525F74008CD3DF /* MatchFilter.swift in Sources */,
+				74C2BC262C525F9A008CD3DF /* MatchFilterList.swift in Sources */,
 				741296242C22D479006BAE21 /* PastanqueApp.swift in Sources */,
 				74C2BC202C5236A3008CD3DF /* MatchTeams.swift in Sources */,
+				74C2BC3F2C529542008CD3DF /* Header.swift in Sources */,
 				749EC43B2C4E963B00F3BBA8 /* User.swift in Sources */,
 				749EC42B2C24327600F3BBA8 /* MatchesViewModel.swift in Sources */,
 				74C2BC1E2C5232D2008CD3DF /* MatchLeague.swift in Sources */,
 				749EC4292C24325400F3BBA8 /* Match.swift in Sources */,
 				74C2BC222C523718008CD3DF /* MatchStartTime.swift in Sources */,
+				74C2BC432C5295D0008CD3DF /* HeaderView.swift in Sources */,
+				74C2BC322C528423008CD3DF /* TabBarViewModel.swift in Sources */,
 				749EC42F2C2440E500F3BBA8 /* SignUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

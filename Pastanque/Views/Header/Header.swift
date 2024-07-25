@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HeaderView: View {
+struct Header: View {
     var username : String
     var gems : Int
     var credits : Double
