@@ -4,8 +4,10 @@ import FirebaseFirestoreSwift
 
 class MatchesViewModel: ObservableObject {
     @Published var matches: [Match] = []
+    @Published var selectedLeague: String? = nil
     @Published var selectedOddsForMatch: [String: String] = [:]
-    
+    @Published var leagues: [String] = []
+
     private var db = Firestore.firestore()
     
     func fetchMatches(for unlockedLeagues: [String]) {
@@ -46,13 +48,26 @@ class MatchesViewModel: ObservableObject {
                     }
                 }
                 
+                // Extract leagues from the filtered matches
+                let leaguesSet = Set(filteredMatches.map { $0.leagueName })
+                let leagues = Array(leaguesSet)
                 
-                // Update the matches on the main thread
+                // Update the matches and leagues on the main thread
                 DispatchQueue.main.async {
                     self.matches = filteredMatches
+                    self.leagues = leagues
                 }
             }
     }
+    
+    var filteredMatches: [Match] {
+        if let selectedLeague = selectedLeague {
+            return matches.filter { $0.leagueName == selectedLeague }
+        } else {
+            return matches
+        }
+    }
+    
     func toggleSelectedOdd(forMatch matchId: String, withOddId oddId: String) {
         if selectedOddsForMatch[matchId] == oddId {
             selectedOddsForMatch[matchId] = nil

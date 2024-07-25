@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct MainView: View {
+struct MatchesView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
-    @EnvironmentObject var matchViewModel: MatchesViewModel
+    @EnvironmentObject var matchesViewModel: MatchesViewModel
 
     var body: some View {
         VStack {
@@ -10,7 +10,9 @@ struct MainView: View {
                 .font(.largeTitle)
                 .padding()
             
-            MatchesView()
+            MatchFilterList(viewModel: matchesViewModel)
+            
+            MatchesList()
             
             Button(action: {
                 authViewModel.logout()
