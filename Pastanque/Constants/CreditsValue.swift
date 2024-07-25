@@ -1,18 +1,20 @@
-//
-//  CreditsValue.swift
-//  Pastanque
-//
-//  Created by Anthony Escallier on 25/07/2024.
-//
-
 import SwiftUI
 
 struct CreditsValue: View {
+    let valueText: String
+    let imageName: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 8) {
+            Text(valueText)
+                .foregroundColor(.customWhite)
+                .font(.custom(FontStyles.medium, size: FontStyles.normal))
+            
+            Image(imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 20, height: 20)
+        }
+        .padding(4)
     }
-}
-
-#Preview {
-    CreditsValue()
 }

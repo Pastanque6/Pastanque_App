@@ -1,18 +1,40 @@
-//
-//  ProfileView.swift
-//  Pastanque
-//
-//  Created by Anthony Escallier on 25/07/2024.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @EnvironmentObject var authViewModel: AuthViewModel
 
-#Preview {
-    ProfileView()
+    var body: some View {
+        VStack {
+            Text("Welcome, \(authViewModel.user?.username ?? "User")!")
+                .font(.largeTitle)
+                .padding()
+
+            if let user = authViewModel.user {
+                Text("Credits: \(user.credits, specifier: "%.2f")")
+                    .font(.headline)
+                    .padding(.top, 8)
+                Text("Gems: \(user.gems)")
+                    .font(.headline)
+                    .padding(.top, 8)
+            } else {
+                Text("Loading user data...")
+                    .font(.headline)
+                    .padding(.top, 8)
+            }
+
+            Spacer()
+
+            Button(action: {
+                authViewModel.logout()
+            }) {
+                Text("Logout")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.red)
+                    .cornerRadius(8)
+            }
+            .padding()
+        }
+        .padding()
+    }
 }

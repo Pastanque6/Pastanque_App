@@ -1,18 +1,20 @@
-//
-//  MainViewContainer.swift
-//  Pastanque
-//
-//  Created by Anthony Escallier on 25/07/2024.
-//
-
 import SwiftUI
 
-struct MainViewContainer: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct HeaderView<Content: View>: View {
+ //   @ObservedObject var userData = User
+    let content: Content
+    let currencyType: CurrencyType
+    
+    init(currencyType: CurrencyType, @ViewBuilder content: () -> Content) {
+        self.currencyType = currencyType
+        self.content = content()
     }
-}
-
-#Preview {
-    MainViewContainer()
-}
+    
+    var body: some View {
+        VStack(spacing: 0) {
+  //          Header(username: userData.username, gems: userData.gems, credits: userData.credits, currencyType: currencyType)
+   //         content
+        }
+        .background(Color.grey600)
+        }
+    }
