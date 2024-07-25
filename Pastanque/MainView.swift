@@ -3,7 +3,7 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     @EnvironmentObject var matchViewModel: MatchesViewModel
-    
+
     var body: some View {
         VStack {
             Text("Welcome, \(authViewModel.user?.username ?? "User")!")
@@ -23,5 +23,7 @@ struct MainView: View {
             }
             .padding()
         }
+        .padding(.horizontal, 12)
+
     }
 }
