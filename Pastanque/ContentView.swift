@@ -31,8 +31,14 @@ struct ContentView: View {
             .padding(.horizontal, 12)
             .background(Color.customBlack)
         } else {
-            SignUpView()
-                .environmentObject(authManager)
+            VStack(spacing: 0) {
+                SignUpFlow()
+                    .environmentObject(authManager)
+            }
+            .frame(maxHeight: .infinity)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 12)
+            .background(Color.customBlack)
         }
     }
 }
