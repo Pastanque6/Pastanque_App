@@ -57,5 +57,7 @@ struct SignUpView: View {
                     .padding()
             }
         }
+        .padding(.horizontal, 12)
+        .background(Color.customBlack)
     }
 }

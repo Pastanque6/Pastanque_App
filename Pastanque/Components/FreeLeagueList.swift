@@ -11,7 +11,6 @@ struct FreeLeagueList: View {
                     FreeLeague(league: league, selectedLeagueKey: $selectedLeagueKey)
                 }
             }
-            .padding()
         }
     }
 }
