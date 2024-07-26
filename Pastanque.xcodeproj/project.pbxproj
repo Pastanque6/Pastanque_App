@@ -42,15 +42,13 @@
 		74C2BC3F2C529542008CD3DF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC3E2C529542008CD3DF /* Header.swift */; };
 		74C2BC412C529591008CD3DF /* CreditsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC402C529591008CD3DF /* CreditsValue.swift */; };
 		74C2BC432C5295D0008CD3DF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC422C5295D0008CD3DF /* HeaderView.swift */; };
-<<<<<<< HEAD
 		74C2BC542C538812008CD3DF /* SportFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC532C538812008CD3DF /* SportFilter.swift */; };
 		74C2BC562C538837008CD3DF /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC552C538837008CD3DF /* SegmentedControl.swift */; };
 		74C2BC582C53894F008CD3DF /* SportsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC572C53894F008CD3DF /* SportsConfig.swift */; };
 		74C2BC5A2C538B22008CD3DF /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC592C538B22008CD3DF /* League.swift */; };
 		74C2BC5C2C538CA5008CD3DF /* FreeLague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC5B2C538CA5008CD3DF /* FreeLague.swift */; };
 		74C2BC5E2C538CDD008CD3DF /* FreeLeagueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2BC5D2C538CDD008CD3DF /* FreeLeagueList.swift */; };
-=======
->>>>>>> fc738adde9cf3eb8a551ff1e4ac77a71869d61a4
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,15 +105,13 @@
 		74C2BC3E2C529542008CD3DF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		74C2BC402C529591008CD3DF /* CreditsValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsValue.swift; sourceTree = "<group>"; };
 		74C2BC422C5295D0008CD3DF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		74C2BC532C538812008CD3DF /* SportFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFilter.swift; sourceTree = "<group>"; };
 		74C2BC552C538837008CD3DF /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		74C2BC572C53894F008CD3DF /* SportsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsConfig.swift; sourceTree = "<group>"; };
 		74C2BC592C538B22008CD3DF /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		74C2BC5B2C538CA5008CD3DF /* FreeLague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeLague.swift; sourceTree = "<group>"; };
 		74C2BC5D2C538CDD008CD3DF /* FreeLeagueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeLeagueList.swift; sourceTree = "<group>"; };
-=======
->>>>>>> fc738adde9cf3eb8a551ff1e4ac77a71869d61a4
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +206,6 @@
 			sourceTree = "<group>";
 		};
 		74C2BC1C2C5232A7008CD3DF /* Constants */ = {
-<<<<<<< HEAD
 			isa = PBXGroup;
 			children = (
 				740024892C50E38400FB8889 /* Fonts */,
@@ -218,7 +213,6 @@
 				740024842C4F869100FB8889 /* NumberFormatter.swift */,
 				74C2BC402C529591008CD3DF /* CreditsValue.swift */,
 				74C2BC572C53894F008CD3DF /* SportsConfig.swift */,
-=======
 			isa = PBXGroup;
 			children = (
 				740024892C50E38400FB8889 /* Fonts */,
@@ -254,7 +248,6 @@
 				74C2BC1D2C5232D2008CD3DF /* MatchLeague.swift */,
 				74C2BC1F2C5236A3008CD3DF /* MatchTeams.swift */,
 				74C2BC212C523718008CD3DF /* MatchStartTime.swift */,
->>>>>>> fc738adde9cf3eb8a551ff1e4ac77a71869d61a4
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -647,11 +640,8 @@
 				74C2BC222C523718008CD3DF /* MatchStartTime.swift in Sources */,
 				74C2BC432C5295D0008CD3DF /* HeaderView.swift in Sources */,
 				74C2BC322C528423008CD3DF /* TabBarViewModel.swift in Sources */,
-<<<<<<< HEAD
 				74C2BC562C538837008CD3DF /* SegmentedControl.swift in Sources */,
 				74C2BC5E2C538CDD008CD3DF /* FreeLeagueList.swift in Sources */,
-=======
->>>>>>> fc738adde9cf3eb8a551ff1e4ac77a71869d61a4
 				749EC42F2C2440E500F3BBA8 /* SignUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
