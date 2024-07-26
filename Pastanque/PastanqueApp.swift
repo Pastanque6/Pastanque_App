@@ -12,7 +12,6 @@ struct PastanqueApp: App {
                 ContentView()
                 .environmentObject(AuthViewModel())
                 .environmentObject(MatchesViewModel())
-                .environmentObject(LeaguesViewModel())
         }
     }
 }

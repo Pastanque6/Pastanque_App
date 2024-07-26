@@ -33,7 +33,6 @@ struct ContentView: View {
         } else {
             SignUpView()
                 .environmentObject(authManager)
-                .environmentObject(LeaguesViewModel())
         }
     }
 }

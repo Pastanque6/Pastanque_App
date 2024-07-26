@@ -7,6 +7,8 @@ class AuthViewModel: ObservableObject {
     @Published var user: User?
     @Published var isLoggedIn: Bool = false
     @Published var errorMessage: String?
+    @Published var leaguesBySport: [String: [League]] = [:]
+    @Published var availableSports: [String] = []
     
     private var db = Firestore.firestore()
     
@@ -17,16 +19,36 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func fetchAvailableLeagues(completion: @escaping ([String]) -> Void) {
+    func fetchAvailableLeagues(completion: @escaping () -> Void) {
         db.collection("leagues").whereField("available", isEqualTo: true).getDocuments { snapshot, error in
             if let error = error {
                 print("Failed to fetch leagues: \(error.localizedDescription)")
-                completion([])
+                self.leaguesBySport = [:]
+                self.availableSports = []
+                completion()
                 return
             }
             
-            let leagues = snapshot?.documents.compactMap { $0.data()["sport_key"] as? String } ?? []
-            completion(leagues)
+            var leaguesBySport: [String: [League]] = [:]
+            
+            snapshot?.documents.forEach { document in
+                let data = document.data()
+                let sport = data["sport"] as? String ?? "Unknown"
+                let id = data["sport_key"] as? String ?? "Unknown"
+                let name = data["name"] as? String ?? "Unknown"
+                let country = data["country"] as? String ?? "Unknown"
+                
+                let league = League(id: id, name: name, sport: sport, country: country)
+                
+                if leaguesBySport[sport] == nil {
+                    leaguesBySport[sport] = []
+                }
+                leaguesBySport[sport]?.append(league)
+            }
+            
+            self.leaguesBySport = leaguesBySport
+            self.availableSports = SportsConfig.sportsOrder.filter { leaguesBySport.keys.contains($0) }
+            completion()
         }
     }
     

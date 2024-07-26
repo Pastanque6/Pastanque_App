@@ -4,8 +4,8 @@ struct SignUpView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     @State private var username: String = ""
     @State private var phoneNumber: String = ""
-    @State private var selectedLeague: String = ""
-    @State private var availableLeagues: [String] = []
+    @State private var selectedLeagueId: String? = nil
+    @State private var selectedSport: String = SportsConfig.sportsOrder.first ?? "soccer"
     
     var body: some View {
         VStack {
@@ -21,22 +21,21 @@ struct SignUpView: View {
                 .cornerRadius(8)
                 .padding(.horizontal)
             
-            Picker("Select a League", selection: $selectedLeague) {
-                ForEach(availableLeagues, id: \.self) { league in
-                    Text(league).tag(league)
+            SegmentedControl(selectedSport: $selectedSport, availableSports: authViewModel.availableSports)
+                .padding(.vertical)
+            
+            FreeLeagueList(leagues: authViewModel.leaguesBySport[selectedSport] ?? [], selectedLeagueKey: $selectedLeagueId)
+                .onAppear {
+                    authViewModel.fetchAvailableLeagues {
+                        self.selectedSport = authViewModel.availableSports.first ?? "soccer"
+                        if let defaultLeagues = authViewModel.leaguesBySport[self.selectedSport] {
+                            self.selectedLeagueId = defaultLeagues.first?.id
+                        }
+                    }
                 }
-            }
-            .padding()
-            .onAppear {
-                // Fetch available leagues
-                authViewModel.fetchAvailableLeagues { leagues in
-                    self.availableLeagues = leagues
-                    self.selectedLeague = leagues.first ?? ""
-                }
-            }
             
             Button(action: {
-                authViewModel.signUp(username: username, phoneNumber: phoneNumber, selectedLeague: selectedLeague) { success in
+                authViewModel.signUp(username: username, phoneNumber: phoneNumber, selectedLeague: selectedLeagueId ?? "") { success in
                     if success {
                         print("Sign up successful")
                     } else {
