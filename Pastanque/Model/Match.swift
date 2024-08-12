@@ -42,46 +42,20 @@ struct Match: Identifiable, Codable, Equatable {
 }
 
 struct Odds: Codable, Equatable {
-    var homeTeam: Double?
-    var awayTeam: Double?
-    var draw: Double?
+    struct OddDetail: Codable, Equatable {
+        var id: String
+        var value: Double
+        var label: String
+    }
+    
+    var homeTeam: OddDetail?
+    var awayTeam: OddDetail?
+    var draw: OddDetail?
 
     enum CodingKeys: String, CodingKey {
         case homeTeam = "home_team"
         case awayTeam = "away_team"
         case draw
-    }
-
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        
-        homeTeam = try? container.decodeIfPresent(Double.self, forKey: .homeTeam)
-        awayTeam = try? container.decodeIfPresent(Double.self, forKey: .awayTeam)
-        draw = try? container.decodeIfPresent(Double.self, forKey: .draw)
-        
-        if homeTeam == nil, let homeTeamString = try? container.decodeIfPresent(String.self, forKey: .homeTeam) {
-            homeTeam = Double(homeTeamString)
-        }
-        
-        if awayTeam == nil, let awayTeamString = try? container.decodeIfPresent(String.self, forKey: .awayTeam) {
-            awayTeam = Double(awayTeamString)
-        }
-        
-        if draw == nil, let drawString = try? container.decodeIfPresent(String.self, forKey: .draw) {
-            draw = Double(drawString)
-        }
-    }
-
-    init(homeTeam: Double?, awayTeam: Double?, draw: Double?) {
-        self.homeTeam = homeTeam
-        self.awayTeam = awayTeam
-        self.draw = draw
-    }
-
-    static func == (lhs: Odds, rhs: Odds) -> Bool {
-        return lhs.homeTeam == rhs.homeTeam &&
-               lhs.awayTeam == rhs.awayTeam &&
-               lhs.draw == rhs.draw
     }
 }
 

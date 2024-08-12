@@ -6,6 +6,7 @@ struct User: Identifiable, Codable {
     var phoneNumber: String
     var credits: Double
     var gems: Int
+    var avatar: String
     var unlockedLeagues: [String]
 }
 

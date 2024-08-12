@@ -11,6 +11,7 @@ class SignUpViewModel: ObservableObject {
             updateFormValidity()
         }
     }
+    @Published var avatar: String = "avatar1"
     @Published var currentStep: Int = 1
     @Published var acceptedRules: Bool = false
     @Published var selectedLeagueKey: String? = nil
@@ -90,7 +91,7 @@ class SignUpViewModel: ObservableObject {
             return
         }
 
-        authViewModel.signUp(username: username, phoneNumber: phoneNumber, selectedLeague: selectedLeagueKey) { success in
+        authViewModel.signUp(username: username, phoneNumber: phoneNumber, avatar: avatar, selectedLeague: selectedLeagueKey) { success in
             DispatchQueue.main.async {
                 if success {
                     self.isSignedUp = true

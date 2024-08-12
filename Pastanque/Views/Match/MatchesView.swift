@@ -1,12 +1,20 @@
 import SwiftUI
 
 struct MatchesView: View {
-    @EnvironmentObject var matchesViewModel: MatchesViewModel
-
+    @ObservedObject var viewModel: MatchesViewModel
+    
     var body: some View {
         VStack(spacing: 12) {
-            MatchFilterList(viewModel: matchesViewModel)
+            MatchFilterList(viewModel: viewModel)
             MatchesList()
+                .environmentObject(viewModel)
         }
+        .padding(.top, 4)
+        .overlay(
+            FloatingButton()
+                .environmentObject(viewModel)
+                .padding(),
+            alignment: .bottomTrailing
+        )
     }
 }

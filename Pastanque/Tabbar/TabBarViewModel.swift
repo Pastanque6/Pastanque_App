@@ -6,6 +6,6 @@ class TabBarViewModel: ObservableObject {
     let tabItems = [
             (title: "Matchs", iconNameOn: "MatchsOn", iconNameOff: "MatchsOff"),
             (title: "Mes Paris", iconNameOn: "BetsOn", iconNameOff: "BetsOff"),
-            (title: "Profil", iconNameOn: "ShopOn", iconNameOff: "ShopOff")
+            (title: "Boutique", iconNameOn: "ShopOn", iconNameOff: "ShopOff")
         ]
 }

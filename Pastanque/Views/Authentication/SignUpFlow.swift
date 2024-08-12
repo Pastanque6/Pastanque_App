@@ -19,5 +19,9 @@ struct SignUpFlow: View {
                 EmptyView()
             }
         }
+        .frame(maxHeight: .infinity)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 12)
+        .background(Color.customBlack)
     }
 }

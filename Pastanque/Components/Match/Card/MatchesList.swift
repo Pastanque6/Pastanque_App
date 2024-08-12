@@ -12,8 +12,10 @@ struct MatchesList: View {
                         MatchCard(match: match)
                     }
                 }
-                .padding(.vertical)
+                .padding(.bottom, 64)
+
             }
+
         }
         .onAppear {
             if let unlockedLeagues = authViewModel.user?.unlockedLeagues {
@@ -21,7 +23,6 @@ struct MatchesList: View {
             }
         }
         .onChange(of: matchesViewModel.matches) { oldMatches, newMatches in
-            print("Matches updated: \(newMatches.count) matches loaded.")
         }
     }
 }

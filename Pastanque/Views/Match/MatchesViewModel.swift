@@ -15,7 +15,7 @@ class MatchesViewModel: ObservableObject {
         
         db.collection("matches")
             .whereField("sport_key", in: unlockedLeagues)
-            .order(by: "commence_time", descending: false) // Order by commence time ascending
+            .order(by: "commence_time", descending: false)
             .getDocuments { (querySnapshot, error) in
                 if let error = error {
                     print("Error getting documents: \(error)")
@@ -68,11 +68,84 @@ class MatchesViewModel: ObservableObject {
         }
     }
     
+    var oddsProduct: Double {
+        selectedOddsForMatch.reduce(1.0) { currentProduct, selection in
+            let (matchId, oddId) = selection
+            
+            guard let match = matches.first(where: { $0.id == matchId }),
+                  let oddValue = match.odds.oddsForId(oddId) else {
+                return currentProduct
+            }
+    
+            return currentProduct * oddValue
+        }
+    }
+    
     func toggleSelectedOdd(forMatch matchId: String, withOddId oddId: String) {
         if selectedOddsForMatch[matchId] == oddId {
-            selectedOddsForMatch[matchId] = nil
+            selectedOddsForMatch.removeValue(forKey: matchId)
         } else {
             selectedOddsForMatch[matchId] = oddId
+        }
+    }
+    
+    func clearAllSelectedOdds() {
+        selectedOddsForMatch.removeAll()
+    }
+}
+
+extension MatchesViewModel {
+    var selectedMatchesAndOdds: [(match: Match, odd: Odds.OddDetail)] {
+        var selectedMatchesAndOdds = [(Match, Odds.OddDetail)]()
+        
+        for (matchId, oddId) in selectedOddsForMatch {
+            if let match = matches.first(where: { $0.id == matchId }),
+               let odd = match.odds.detailForId(oddId) {
+                selectedMatchesAndOdds.append((match, odd))
+            }
+        }
+        
+        return selectedMatchesAndOdds
+    }
+}
+
+extension Odds {
+    func oddsForId(_ id: String) -> Double? {
+        switch id {
+        case homeTeam?.id:
+            return homeTeam?.value
+        case draw?.id:
+            return draw?.value
+        case awayTeam?.id:
+            return awayTeam?.value
+        default:
+            return nil
+        }
+    }
+
+    func detailForId(_ id: String) -> OddDetail? {
+        switch id {
+        case homeTeam?.id:
+            return homeTeam
+        case draw?.id:
+            return draw
+        case awayTeam?.id:
+            return awayTeam
+        default:
+            return nil
+        }
+    }
+
+    func labelForId(_ id: String) -> String? {
+        switch id {
+        case homeTeam?.id:
+            return homeTeam?.label
+        case draw?.id:
+            return draw?.label
+        case awayTeam?.id:
+            return awayTeam?.label
+        default:
+            return nil
         }
     }
 }

@@ -13,14 +13,14 @@ struct LeagueSelectionView: View {
                     Text("Championnat")
                         .font(.custom(FontStyles.medium, size: FontStyles.big))
                         .foregroundColor(Color.customWhite)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 VStack(spacing: 4) {
                     Text("On t’offre ton premier championnat sur lequel parier, choisis bien !")
                         .font(.custom(FontStyles.light, size: FontStyles.small))
                         .foregroundColor(Color.grey100)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Text("Tu pourras en débloquer d’autres par la suite.")
                         .font(.custom(FontStyles.light, size: FontStyles.small))

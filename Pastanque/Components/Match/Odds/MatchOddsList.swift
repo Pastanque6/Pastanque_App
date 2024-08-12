@@ -1,22 +1,25 @@
 import SwiftUI
 
 struct MatchOddsList: View {
-    @EnvironmentObject var viewModel: MatchesViewModel
-    var match: Match
+    @EnvironmentObject var viewModel : MatchesViewModel
+    var matchId: String
+    let odds: Odds
+    let homeTeam: String
+    let awayTeam: String
     
-    var organizedOddsData: [(id: String, value: Double, team: String)] {
-        var orderedOdds: [(id: String, value: Double, team: String)] = []
+    var organizedOddsData: [Odds.OddDetail] {
+        var orderedOdds: [Odds.OddDetail] = []
         
-        if let homeOdd = match.odds.homeTeam {
-            orderedOdds.append((id: "home", value: homeOdd, team: match.homeTeam))
+        if let homeOdd = odds.homeTeam {
+            orderedOdds.append(homeOdd)
         }
         
-        if let drawOdd = match.odds.draw {
-            orderedOdds.append((id: "draw", value: drawOdd, team: "Match nul"))
+        if let drawOdd = odds.draw {
+            orderedOdds.append(drawOdd)
         }
         
-        if let awayOdd = match.odds.awayTeam {
-            orderedOdds.append((id: "away", value: awayOdd, team: match.awayTeam))
+        if let awayOdd = odds.awayTeam {
+            orderedOdds.append(awayOdd)
         }
         
         return orderedOdds
@@ -26,15 +29,16 @@ struct MatchOddsList: View {
         HStack(spacing: 8) {
             ForEach(organizedOddsData, id: \.id) { odd in
                 MatchOdds(
-                    team: odd.team,
+                    team: odd.label,
                     odds: odd.value,
                     oddId: odd.id,
-                    isSelected: viewModel.selectedOddsForMatch[match.id ?? ""] == odd.id,
+                    isSelected: viewModel.selectedOddsForMatch[matchId] == odd.id,
                     onSelect: {
-                        viewModel.toggleSelectedOdd(forMatch: match.id ?? "", withOddId: odd.id)
+                        viewModel.toggleSelectedOdd(forMatch: matchId, withOddId: odd.id)
                     }
                 )
             }
         }
     }
 }
+
